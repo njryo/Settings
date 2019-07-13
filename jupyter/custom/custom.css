@@ -1,0 +1,35 @@
+/*
+cf.
+https://github.com/draperjames/one-dark-notebook/blob/master/custom.css
+*/
+
+
+:root {
+    --main-font-family: 'Source Han Code JP', Consolas, monaco, monospace;
+}
+
+
+.CodeMirror pre, .CodeMirror-dialog, .CodeMirror-dialog .CodeMirror-search-field, .terminal-app .terminal {
+    font-family: var(--main-font-family);
+    font-size: 10pt;
+}
+
+div.completions select {
+    font-family: var(--main-font-family);
+    font-size: 9pt;
+}
+
+div.output pre, div.output code, .rendered_html pre, .rendered_html code, div.container pre {
+    font-family: var(--main-font-family);
+    font-size: 10pt;
+}
+
+div.prompt, div.tooltiptext pre {
+    font-family: var(--main-font-family);
+    font-size: 9pt;
+}
+
+div.output_html {
+    /*font-family: sans-serif; */
+    font-family: var(--main-font-family);
+}
