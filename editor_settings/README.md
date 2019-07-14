@@ -1,5 +1,21 @@
 # エディターの設定メモ
 
+## VSCode
+
+### Extensions
+
+- Java Extension Pack
+- Excel Viewer
+- Japanese Language Pack for Visual Studio Code
+- LaTeX Workshop
+- Markdown Math
+- One Dark Pro
+- Python
+- Scala Language Server
+- Scala Syntax
+- Trailing Spaces
+
+
 ## IntelliJ, PyCharm共通
 
 ### エディターの設定
@@ -55,8 +71,4 @@ Material Theme UI pluginを導入
 - Size 12
 - Line spacing 1.1
 
-(PythonだとPython Consoleをよく使うからエディターフォントに合わせた方が見やすそう。  
-IntelliJだともっと見やすい設定が他にあると思う。)
-
-
-
+(PythonだとPython Consoleをよく使うからエディターフォントに合わせた方が見やすそう。)
