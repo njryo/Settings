@@ -1,6 +1,6 @@
 ## conda環境
 
-conda環境のカーネルをJupyterに追加:
+conda環境のカーネルをJupyterに追加：
 
 ```
 python -m ipykernel install --user --name <name of kernel> 
@@ -13,3 +13,8 @@ python -m ipykernel install --user --name <name of kernel>
 - 公式の説明に従ってインストール
 - numpy等はconda-forgeから
 - pystanはpipでインストールする
+
+### pymc3 on Windows
+
+- 依存パッケージのバージョンの組み合わせによって上手くいったりいかなかったり
+- pymc3.ymlは上手くいった例
