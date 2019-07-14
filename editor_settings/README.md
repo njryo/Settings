@@ -11,9 +11,17 @@
 - Markdown Math
 - One Dark Pro
 - Python
-- Scala Language Server
 - Scala Syntax
+- Scala (Metals)
 - Trailing Spaces
+- Remote Development
+
+### WSLをRemote Developmentで使う時の設定
+
+以下を上書き：
+
+- MetalsのJAVA_HOMEの値
+- Pythonのデフォルトパス
 
 
 ## IntelliJ, PyCharm共通
