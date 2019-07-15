@@ -21,9 +21,7 @@ jupyter notebook --generate-config
 
 ```
 # 追加したい環境をactivateしてから
-python -m ipykernel install --user --name <name of kernel> 
---display-name 
-<name displayed on Jupyter>
+python -m ipykernel install --user --name <name of kernel> --display-name <name displayed on Jupyter>
 ```
 
 ## conda環境
