@@ -1,0 +1,52 @@
+{
+    // path等を適宜変更して使う（edit hereとなっている部分）
+
+    // エディター
+    "files.autoGuessEncoding": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.formatOnPaste": true,
+    "editor.suggestSelection": "first",
+
+    "window.zoomLevel": 0,
+    "editor.fontSize": 13,
+    "editor.fontFamily": "'Source Han Code JP','Source Han Sans HW', 'Gen Shin Gothic Monospace', Consolas, 'Courier New', monospace",
+    "workbench.colorTheme": "One Dark Pro",
+
+    "git.ignoreMissingGitWarning": true,
+
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+
+    // terminal setting
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+    "terminal.integrated.fontSize": 13,
+
+    // python
+    "[python]": {
+        "editor.tabSize": 4,
+        "editor.renderIndentGuides": true
+    },
+
+    "python.pythonPath": "edit here",
+
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": [
+        "--ignore=E265, E402, W391"
+    ],
+
+    "python.jediEnabled": false,
+    "python.autoComplete.addBrackets": true,
+    "python.analysis.memory.keepLibraryAst": true,
+    "python.analysis.memory.keepLibraryLocalVariables": true,
+
+    // markdown
+    "[markdown]": {
+        "editor.renderWhitespace": "boundary"
+    },
+
+    // Java
+    "java.configuration.checkProjectSettingsExclusions": false,
+
+    // Scala
+    "metals.javaHome": "edit here"
+}
