@@ -11,6 +11,7 @@
     "editor.fontSize": 13,
     "editor.fontFamily": "'Source Han Code JP','Source Han Sans HW', 'Gen Shin Gothic Monospace', Consolas, 'Courier New', monospace",
     "workbench.colorTheme": "One Dark Pro",
+    "workbench.iconTheme": "vscode-icons",
 
     "git.ignoreMissingGitWarning": true,
 
