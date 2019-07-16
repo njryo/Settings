@@ -4,6 +4,9 @@
 
 ### Extensions
 
+- Git History
+- Path Autocomplete
+- vscode-icons
 - Java Extension Pack
 - Excel Viewer
 - Japanese Language Pack for Visual Studio Code
