@@ -6,6 +6,7 @@
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.formatOnPaste": true,
     "editor.suggestSelection": "first",
+    "editor.detectIndentation": false,
 
     "window.zoomLevel": 0,
     "editor.fontSize": 13,
@@ -49,5 +50,9 @@
     "java.configuration.checkProjectSettingsExclusions": false,
 
     // Scala
-    "metals.javaHome": "edit here"
+    "metals.javaHome": "edit here",
+    "[scala]": {
+        "editor.tabSize": 2,
+        "files.trimTrailingWhitespace": true
+    }
 }
