@@ -1,5 +1,5 @@
 {
-    // path等を適宜変更して使う（edit hereとなっている部分）
+    // edit path settings!
 
     // エディター
     "files.autoGuessEncoding": true,
@@ -12,9 +12,8 @@
     "editor.fontSize": 13,
     "editor.fontFamily": "'Source Han Code JP','Source Han Sans HW', 'Gen Shin Gothic Monospace', Consolas, 'Courier New', monospace",
     "workbench.colorTheme": "One Dark Pro",
-    "workbench.iconTheme": "vscode-icons",
+    "workbench.iconTheme": "material-icon-theme",
 
-    "git.ignoreMissingGitWarning": true,
 
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
 
@@ -22,10 +21,27 @@
     "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
     "terminal.integrated.fontSize": 13,
 
+    // TODO Highlight
+    // py以下を追加
+    "todohighlight.include": [
+        "**/*.js",
+        "**/*.jsx",
+        "**/*.ts",
+        "**/*.tsx",
+        "**/*.html",
+        "**/*.php",
+        "**/*.css",
+        "**/*.scss",
+        "**/*.py",
+        "**/*.scala",
+        "**/*.java"
+    ],
+
     // python
     "[python]": {
         "editor.tabSize": 4,
-        "editor.renderIndentGuides": true
+        "editor.renderIndentGuides": true,
+        "files.trimTrailingWhitespace": true
     },
 
     "python.pythonPath": "edit here",
@@ -41,9 +57,12 @@
     "python.analysis.memory.keepLibraryAst": true,
     "python.analysis.memory.keepLibraryLocalVariables": true,
 
+    "autoDocstring.docstringFormat": "numpy",
+
     // markdown
     "[markdown]": {
-        "editor.renderWhitespace": "boundary"
+        "editor.renderWhitespace": "boundary",
+        "files.trimTrailingWhitespace": false
     },
 
     // Java
@@ -53,6 +72,7 @@
     "metals.javaHome": "edit here",
     "[scala]": {
         "editor.tabSize": 2,
+        "editor.renderIndentGuides": true,
         "files.trimTrailingWhitespace": true
     }
 }
