@@ -4,28 +4,28 @@
 
 ### Extensions
 
-- Git History
-- Path Autocomplete
-- vscode-icons
-- Java Extension Pack
+- autoDocstring
+    - python docstring用のextension
+- Duplicate action
 - Excel Viewer
-- Japanese Language Pack for Visual Studio Code
+    - csvを確認する時などに
+- Git History
+- Japanese Laguage Pack
+- Java Extension Pack
+    - Java用のextensionをまとめて
 - LaTeX Workshop
-- Markdown Math
+- Markdown+Math
+- Material Icon Theme
 - One Dark Pro
+- Partial Diff
+- Path Autocomplete
 - Python
-- Scala Syntax
-- Scala (Metals)
-- Trailing Spaces
 - Remote Development
-
-### WSLをRemote Developmentで使う時の設定
-
-以下を上書き：
-
-- MetalsのJAVA_HOMEの値
-- Pythonのデフォルトパス
-
+- Scala (Metals)
+- Scala Syntax (official)
+- TODO Highlight
+- Trailing Spaces
+- Visual Studio IntelliCode
 
 ## IntelliJ, PyCharm共通
 
