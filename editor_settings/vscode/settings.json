@@ -3,7 +3,6 @@
 
     // エディター
     "files.autoGuessEncoding": true,
-    "editor.multiCursorModifier": "ctrlCmd",
     "editor.formatOnPaste": true,
     "editor.suggestSelection": "first",
     "editor.detectIndentation": false,
@@ -11,9 +10,8 @@
     "window.zoomLevel": 0,
     "editor.fontSize": 13,
     "editor.fontFamily": "'Source Han Code JP','Source Han Sans HW', 'Gen Shin Gothic Monospace', Consolas, 'Courier New', monospace",
-    "workbench.colorTheme": "One Dark Pro",
     "workbench.iconTheme": "material-icon-theme",
-
+    "workbench.colorTheme": "One Dark Pro",
 
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
 
@@ -41,16 +39,21 @@
     "[python]": {
         "editor.tabSize": 4,
         "editor.renderIndentGuides": true,
+        "editor.insertSpaces": true,
         "files.trimTrailingWhitespace": true
     },
 
     "python.pythonPath": "edit here",
 
-    "python.linting.pylintEnabled": false,
-    "python.linting.flake8Enabled": true,
-    "python.linting.flake8Args": [
-        "--ignore=E265, E402, W391"
+    "python.linting.pylintEnabled": true,
+    "python.linting.pylintArgs": [
+        "--disable=missing-docstring, fixme, invalid-name"
     ],
+    "python.linting.pylintUseMinimalCheckers": false,
+    //"python.linting.flake8Enabled": false,
+    //"python.linting.flake8Args": [
+    //    "--ignore=E265, E402, W391"
+    //],
 
     "python.jediEnabled": false,
     "python.autoComplete.addBrackets": true,
