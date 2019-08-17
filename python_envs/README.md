@@ -1,5 +1,17 @@
 # Python環境管理メモ
 
+## Pythonパッケージ
+
+分析用環境、インストールするもの:
+
+```
+autopep8, bokeh, flake8, graphviz, ipykernel, lightgbm, matplotlib, networkx, nltk, notebook, numpy, pandas, py-xgboost, python-graphviz, pyflakes, pylint, pytest, scikit-image, scikit-learn, scipy, seaborn, sphinx, statsmodels, sympy
+```
+
+- tensorflow
+- pytorch, torchvision
+
+
 ## Jupyter
 
 ### 設定ファイル
