@@ -5,10 +5,10 @@
 分析用環境、インストールするもの:
 
 ```
-autopep8, bokeh, flake8, graphviz, ipykernel, lightgbm, matplotlib, networkx, nltk, notebook, numpy, pandas, py-xgboost, python-graphviz, pyflakes, pylint, pytest, scikit-image, scikit-learn, scipy, seaborn, sphinx, statsmodels, sympy
+autopep8, bokeh, flake8, graphviz, ipykernel, lightgbm, matplotlib, networkx, nltk, notebook, numpy, pandas, py-xgboost, python-graphviz, pyflakes, pylint, pytest, scikit-image, scikit-learn, scipy, seaborn, sphinx, statsmodels, sympy, tensorboardX
 ```
 
-- tensorflow
+- tensorflow, tensorboard
 - pytorch, torchvision
 
 
