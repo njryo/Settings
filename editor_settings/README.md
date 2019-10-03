@@ -10,6 +10,7 @@
 - Excel Viewer
     - csvを確認する時などに
 - Git History
+- GitLens
 - Japanese Laguage Pack
 - Java Extension Pack
     - Java用のextensionをまとめて
@@ -27,7 +28,7 @@
 - Trailing Spaces
 - Visual Studio IntelliCode
 
-## IntelliJ, PyCharm共通
+## IntelliJ & PyCharm
 
 ### エディターの設定
 
@@ -53,16 +54,24 @@ Material Theme UI pluginを導入
 
 #### 全体的な調整
 
-ツールバーのTools > Material Themeから変更できるものは以下のように設定中
+設定のAppearance & Behavior > Material Theme の部分は
 
-- Mateial Theme Chooser: Atom One Dark
-- Accent Color: Brick Accent Color
-- Panel Options:
-    - Toggle Contrast
-    - Toggle Compact Sidebar
-    - Toggle Compact Menus
-    - Toggle Compact Status Bar
-- Material Theme Options: default
+- Selected Theme はAtom One Dark
+- Contrast Mode にチェック
+- Advanced Settings 以下は
+    - Tabs はチェックなし
+    - Compact
+        - Compact Statusbar とCompact Menus にチェック
+    - Icons
+        - Material UI Icons, File Icons, Folder Decorators, PSI Icons にチェック
+    - Project View
+        - Custom Sidebar Height にチェックで値は18
+    - Components
+        - Uppercase buttons, Accent Scrollbars, Transparent Scrollbars にチェック
+    - Features
+        - Material Theme, Material Design Components, Material File Status Colors にチェック
+    - Other Tweaks
+        - Hollow Folders, Theme in StatusBar, Language Additions, Colored Open Directories にチェック
 
 
 #### エディターフォント
@@ -70,8 +79,9 @@ Material Theme UI pluginを導入
 設定のEditor > Color Scheme > Color Scheme Fontから変更する（Editor > Fontの方ではなく）。
 
 - Font: Source Han Code JP R
-- Size 13
+- Size 12
 - Line spacing 1.0
+- Use color scheme font instead of the default にチェック
 
 
 #### コンソールフォント
@@ -80,6 +90,11 @@ Material Theme UI pluginを導入
 
 - Font: Source Han Code JP R
 - Size 12
-- Line spacing 1.1
+- Line spacing 1.0
+- Use console font instead of the default にチェック
 
-(PythonだとPython Consoleをよく使うからエディターフォントに合わせた方が見やすそう。)
+(PytCharm の方はPython Consoleをよく使うのでエディターフォントに合わせた方が見やすいかも。)
+
+### PyCharm 使用時
+
+設定のTools > Python Integrated Tools でtest, docstring 等の設定ができる。
