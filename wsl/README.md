@@ -12,12 +12,13 @@ sudo sed -i.bak -e "s%http://[^ ]\+%http://ftp.riken.go.jp/Linux/ubuntu/%g" /etc
 ### よく使うもののインストール
 
 ```bash
-sudo apt -y install zip build-essential
+sudo apt -y install zip build-essential gdb
 ```
 
 - sdkman
-    - java, sbt のインストールに
+    - java, sbt のインストールに (公式ドキュメント参照)
 - Anaconda (or miniconda)
+    - 直にインストールしてパスも通す (pyenv などは挟まない方が楽、問題が起きたら考える)
 
 
 ### 日本語化
