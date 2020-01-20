@@ -9,11 +9,15 @@ sudo sed -i.bak -e "s%http://[^ ]\+%http://ftp.riken.go.jp/Linux/ubuntu/%g" /etc
 ```
 
 
-### よく使うもの
+### よく使うもののインストール
 
 ```bash
 sudo apt -y install zip build-essential
 ```
+
+- sdkman
+    - java, sbt のインストールに
+- Anaconda (or miniconda)
 
 
 ### 日本語化
