@@ -1,6 +1,4 @@
 {
-    // edit path settings!
-
     // エディター
     "files.autoGuessEncoding": true,
     "editor.formatOnPaste": true,
@@ -14,12 +12,14 @@
     "workbench.colorTheme": "One Dark Pro",
 
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "vsicons.dontShowNewVersionMessage": true,
 
     // terminal setting
     "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
     "terminal.integrated.fontSize": 13,
 
     // TODO Highlight
+    "todohighlight.isEnable": true,
     // py以下を追加
     "todohighlight.include": [
         "**/*.js",
@@ -32,7 +32,8 @@
         "**/*.scss",
         "**/*.py",
         "**/*.scala",
-        "**/*.java"
+        "**/*.java",
+        "**/*.tex"
     ],
 
     // python
@@ -42,15 +43,15 @@
         "editor.insertSpaces": true,
         "files.trimTrailingWhitespace": true
     },
-
-    "python.pythonPath": "edit here",
-
+    "python.pythonPath": "python path",
     "python.linting.pylintEnabled": true,
     "python.linting.pylintArgs": [
         "--disable=missing-docstring, fixme, invalid-name"
     ],
     "python.linting.pylintUseMinimalCheckers": false,
-    //"python.linting.flake8Enabled": false,
+
+    // flake8 setting
+    //"python.linting.flake8Enabled": true,
     //"python.linting.flake8Args": [
     //    "--ignore=E265, E402, W391"
     //],
@@ -70,12 +71,22 @@
 
     // Java
     "java.configuration.checkProjectSettingsExclusions": false,
+    "[java]": {
+        "editor.tabSize": 2
+    },
 
     // Scala
-    "metals.javaHome": "edit here",
     "[scala]": {
         "editor.tabSize": 2,
         "editor.renderIndentGuides": true,
         "files.trimTrailingWhitespace": true
-    }
+    },
+
+    // latex workshop
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.bibtex-format.sortby": [
+        "key",
+        "[\"AUTHOR\", \"TITLE\"]"
+    ],
+    "latex-workshop.bibtex-format.case": "UPPERCASE"
 }
