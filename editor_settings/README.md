@@ -4,29 +4,15 @@
 
 ### Extensions
 
-- autoDocstring
-    - python docstring用のextension
-- Duplicate action
-- Excel Viewer
-    - csvを確認する時などに
-- Git History
-- GitLens
-- Japanese Laguage Pack
-- Java Extension Pack
-    - Java用のextensionをまとめて
-- LaTeX Workshop
-- Markdown+Math
-- Material Icon Theme
-- One Dark Pro
-- Partial Diff
-- Path Autocomplete
-- Python
-- Remote Development
-- Scala (Metals)
-- Scala Syntax (official)
-- TODO Highlight
-- Trailing Spaces
-- Visual Studio IntelliCode
+`./vscode/vscode_extensions.txt` にあるもの。次のように出力:
+
+```bash
+code --list-extensions > vscode_extensions.txt
+```
+
+### 設定
+
+`./vscode/settings.json` を参照。
 
 ## IntelliJ & PyCharm
 
@@ -47,6 +33,10 @@
 #### 選択文字列を囲む機能
 
 設定のEditor > General > Smart KeysのSurround selection on typing quote or braceにチェック
+
+#### keymap
+
+VS Code Keymap プラグインを導入。設定のKeymap でVS Code を選択後、Main Menu > View > Appearance のQuick Documentation に何か振る(Ctrl + Q とか)。
 
 ### 見た目
 
@@ -79,7 +69,7 @@ Material Theme UI pluginを導入
 設定のEditor > Color Scheme > Color Scheme Fontから変更する（Editor > Fontの方ではなく）。
 
 - Font: Source Han Code JP R
-- Size 12
+- Size 13
 - Line spacing 1.0
 - Use color scheme font instead of the default にチェック
 

@@ -18,23 +18,50 @@
     "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
     "terminal.integrated.fontSize": 13,
 
-    // TODO Highlight
-    "todohighlight.isEnable": true,
-    // py以下を追加
-    "todohighlight.include": [
-        "**/*.js",
-        "**/*.jsx",
-        "**/*.ts",
-        "**/*.tsx",
-        "**/*.html",
-        "**/*.php",
-        "**/*.css",
-        "**/*.scss",
-        "**/*.py",
-        "**/*.scala",
-        "**/*.java",
-        "**/*.tex"
-    ],
+    // // TODO Highlight
+    // "todohighlight.isEnable": true,
+    // // py以下を追加
+    // "todohighlight.include": [
+    //     "**/*.js",
+    //     "**/*.jsx",
+    //     "**/*.ts",
+    //     "**/*.tsx",
+    //     "**/*.html",
+    //     "**/*.php",
+    //     "**/*.css",
+    //     "**/*.scss",
+    //     "**/*.py",
+    //     "**/*.scala",
+    //     "**/*.java",
+    //     "**/*.tex"
+    // ],
+
+    // html
+    "[html]": {
+        "editor.suggest.insertMode": "replace",
+        "editor.tabSize": 2,
+        "editor.renderIndentGuides": true,
+        "files.trimTrailingWhitespace": true
+    },
+    "liveServer.settings.donotShowInfoMsg": true,
+
+    // css
+    "[css]": {
+        "editor.suggest.insertMode": "replace",
+        "editor.tabSize": 2,
+        "editor.renderIndentGuides": true,
+        "files.trimTrailingWhitespace": true
+    },
+
+    "[json]": {
+        "editor.quickSuggestions": {
+            "strings": true
+        },
+        "editor.suggest.insertMode": "replace",
+        "editor.tabSize": 4,
+        "editor.renderIndentGuides": true,
+        "files.trimTrailingWhitespace": true
+    },
 
     // python
     "[python]": {
@@ -43,7 +70,7 @@
         "editor.insertSpaces": true,
         "files.trimTrailingWhitespace": true
     },
-    "python.pythonPath": "python path",
+    "python.pythonPath": "C:\\Users\\Ryo\\Anaconda3\\python.exe",
     "python.linting.pylintEnabled": true,
     "python.linting.pylintArgs": [
         "--disable=missing-docstring, fixme, invalid-name"
@@ -72,7 +99,9 @@
     // Java
     "java.configuration.checkProjectSettingsExclusions": false,
     "[java]": {
-        "editor.tabSize": 2
+        "editor.tabSize": 2,
+        "editor.renderIndentGuides": true,
+        "files.trimTrailingWhitespace": true
     },
 
     // Scala
@@ -82,11 +111,11 @@
         "files.trimTrailingWhitespace": true
     },
 
-    // latex workshop
+    // latex
     "latex-workshop.view.pdf.viewer": "tab",
     "latex-workshop.bibtex-format.sortby": [
         "key",
         "[\"AUTHOR\", \"TITLE\"]"
     ],
-    "latex-workshop.bibtex-format.case": "UPPERCASE"
+    "latex-workshop.bibtex-format.case": "UPPERCASE",
 }
