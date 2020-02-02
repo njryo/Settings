@@ -1,14 +1,46 @@
-# Python環境管理メモ
+# Python 環境管理メモ
+
+基本Anaconda のconda で管理。Anaconda 関連のパスは通さない。
+
+Windows で普通のPython をインストールする時はパスを通さず、py launcherを活用する。
+
+## py.exe の使い方
+
+インタープリターの起動:
+
+```
+py -3.7 // python 3.7 が起動
+```
+
+pip の利用:
+
+```
+py -3.7 -m pip ... // python 3.7 のpip を使う時
+```
 
 ## Pythonパッケージ
 
-分析用環境、インストールするもの:
+よく使うもの:
 
 ```
-autopep8 bokeh flake8 graphviz ipykernel jupyterlab nodejs lightgbm matplotlib networkx nltk notebook numpy pandas py-xgboost python-graphviz pyflakes pylint pytest scikit-image scikit-learn scipy seaborn sphinx statsmodels sympy
+autopep8 flake8 mypy nose pyflakes pylint pytest sphinx
 ```
 
-- tensorflow, tensorboard
+jupyter 周り:
+
+```
+ipykernel jupyterlab notebook
+```
+
+- カーネルだけでよければipykernel のみをインストールして、下記のカーネル追加を実行
+- nodejs も必要なら入れる(conda で入れられる)
+
+分析用環境:
+
+```
+bokeh lightgbm matplotlib networkx nltk numpy pandas scikit-image scikit-learn scipy seaborn statsmodels sympy tensorflow tensorboard 
+```
+- xgboost (conda ではpy-xgboost)
 - pytorch, torchvision
 
 
@@ -36,15 +68,15 @@ jupyter notebook --generate-config
 python -m ipykernel install --user --name <name of kernel> --display-name <name displayed on Jupyter>
 ```
 
-## conda環境
+## pystan on Windows
 
-### pystan on Windows
-
+- 依存パッケージのバージョンの組み合わせによって上手くいったりいかなかったり
 - 公式の説明に従ってインストール
 - numpy等はconda-forgeから
 - pystanはpipでインストールする
+- jupyter を使う時はこの環境から起動しないと上手くいかないことがある
 
-### pymc3 on Windows
+## pymc3 on Windows
 
 - 依存パッケージのバージョンの組み合わせによって上手くいったりいかなかったり
 - pymc3.ymlは上手くいった例
