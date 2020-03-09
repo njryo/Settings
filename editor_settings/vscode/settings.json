@@ -1,5 +1,5 @@
 {
-    // エディター
+    "files.eol": "\n",
     "files.autoGuessEncoding": true,
     "editor.formatOnPaste": true,
     "editor.suggestSelection": "first",
@@ -18,7 +18,11 @@
     "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
     "terminal.integrated.fontSize": 13,
 
-    // // TODO Highlight
+    // todo tree
+    "todo-tree.tree.showScanModeButton": false,
+
+    //  TODO Highlight
+    //
     // "todohighlight.isEnable": true,
     // // py以下を追加
     // "todohighlight.include": [
@@ -36,13 +40,21 @@
     //     "**/*.tex"
     // ],
 
+    // markdown
+    "[markdown]": {
+        "editor.renderWhitespace": "boundary",
+        "files.trimTrailingWhitespace": false
+    },
+
     // html
     "[html]": {
         "editor.suggest.insertMode": "replace",
         "editor.tabSize": 2,
         "editor.renderIndentGuides": true,
-        "files.trimTrailingWhitespace": true
+        "files.trimTrailingWhitespace": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
+
     "liveServer.settings.donotShowInfoMsg": true,
 
     // css
@@ -53,15 +65,23 @@
         "files.trimTrailingWhitespace": true
     },
 
-    "[json]": {
-        "editor.quickSuggestions": {
-            "strings": true
-        },
-        "editor.suggest.insertMode": "replace",
-        "editor.tabSize": 4,
+    // javascript
+    "[javascript]": {
+        "editor.tabSize": 2,
         "editor.renderIndentGuides": true,
-        "files.trimTrailingWhitespace": true
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
+
+    // vue
+    "[vue]": {
+        "editor.tabSize": 2
+    },
+
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "vue"
+    ],
 
     // python
     "[python]": {
@@ -70,7 +90,10 @@
         "editor.insertSpaces": true,
         "files.trimTrailingWhitespace": true
     },
-    "python.pythonPath": "C:\\Users\\Ryo\\Anaconda3\\python.exe",
+
+    "python.pythonPath": "path",
+    // "python.venvPath": "path",
+
     "python.linting.pylintEnabled": true,
     "python.linting.pylintArgs": [
         "--disable=missing-docstring, fixme, invalid-name"
@@ -78,23 +101,20 @@
     "python.linting.pylintUseMinimalCheckers": false,
 
     // flake8 setting
-    //"python.linting.flake8Enabled": true,
-    //"python.linting.flake8Args": [
-    //    "--ignore=E265, E402, W391"
-    //],
+    // "python.linting.pylintEnabled": false,
+    // "python.linting.flake8Enabled": true,
+    // "python.linting.flake8Args": [
+    //     "--ignore=E265, E402, W391"
+    // ],
+
+    "python.formatting.provider": "autopep8",
 
     "python.jediEnabled": false,
     "python.autoComplete.addBrackets": true,
     "python.analysis.memory.keepLibraryAst": true,
     "python.analysis.memory.keepLibraryLocalVariables": true,
 
-    "autoDocstring.docstringFormat": "numpy",
-
-    // markdown
-    "[markdown]": {
-        "editor.renderWhitespace": "boundary",
-        "files.trimTrailingWhitespace": false
-    },
+    "autoDocstring.docstringFormat": "google",
 
     // Java
     "java.configuration.checkProjectSettingsExclusions": false,
