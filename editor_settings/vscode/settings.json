@@ -96,9 +96,11 @@
 
     "python.linting.pylintEnabled": true,
     "python.linting.pylintArgs": [
-        "--disable=missing-docstring, fixme, invalid-name"
+        "--disable=missing-docstring, fixme, invalid-name, too-few-public-methods"
     ],
     "python.linting.pylintUseMinimalCheckers": false,
+
+    "python.linting.mypyEnabled": true,
 
     // flake8 setting
     // "python.linting.pylintEnabled": false,
