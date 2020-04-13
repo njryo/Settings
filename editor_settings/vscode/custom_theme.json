@@ -1,0 +1,77 @@
+{
+    "editor.tokenColorCustomizations": {
+        "[Community Material Theme Palenight High Contrast]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "keyword.control.import.python",
+                        "keyword.control.flow.python",
+                        "constant.language.python"
+                    ],
+                    "settings": {
+                        "foreground": "#C792EA",
+                    }
+                },
+                {
+                    "scope": [
+                        "keyword.operator.python",
+                        "keyword.operator.arithmetic.python",
+                        "keyword.operator.assignment.python",
+                        "keyword.operator.comparison.python"
+                    ],
+                    "settings": {
+                        "foreground": "#89DDFF"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.parameter.function.language.python"
+                    ],
+                    "settings": {
+                        "foreground": "#F78C6C"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.function-call.generic.python",
+                        "support.type.python",
+                        "punctuation.definition.decorator.python"
+                    ],
+                    "settings": {
+                        "foreground": "#82AAFF"
+                    }
+                },
+                {
+                    "scope": [
+                        "punctuation.definition.string.begin",
+                        "punctuation.definition.string.end"
+                    ],
+                    "settings": {
+                        "foreground": "#C3E88D"
+                    }
+                },
+                {
+                    "scope": [
+                        "entity.other.inherited-class.python"
+                    ],
+                    "settings": {
+                        "foreground": "#A6ACCD"
+                    }
+                },
+                {
+                    "scope": [
+                        "storage.type.function.lambda.python",
+                        "storage.type.class.python",
+                        "storage.type.function.python",
+                        "support.function.builtin.python",
+                        "constant.language.python",
+                        "support.type.python"
+                    ],
+                    "settings": {
+                        "fontStyle": "italic"
+                    }
+                }
+            ]
+        }
+    }
+}
