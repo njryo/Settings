@@ -23,7 +23,7 @@ py -3.7 -m pip ... // python 3.7 のpip を使う時
 よく使うもの:
 
 ```
-autopep8 flake8 mypy nose pyflakes pylint pytest sphinx
+autopep8 black flake8 mypy nose pyflakes pylint pytest sphinx
 ```
 
 jupyter 周り:
