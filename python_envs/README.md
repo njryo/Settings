@@ -78,6 +78,21 @@ jupyter notebook --generate-config
 python -m ipykernel install --user --name <name of kernel> --display-name <name displayed on Jupyter>
 ```
 
+## jupyterlab
+
+### コードセルの設定
+
+Settings -> Noteobook -> User Preferences に以下を
+
+```json
+{
+    "codeCellConfig": {
+        "fontFamily": 'Fira Code',
+        "lineNumbers": true
+    }
+}
+```
+
 ## py.exe の使い方
 
 Windows で https://www.python.org/ からインストールする場合、py.exe でメジャーバージョンの使い分けができる
