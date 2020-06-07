@@ -35,26 +35,36 @@ numpy scipy pandas scikit-learn scikit-image statsmodels lightgbm
 - pystan
   - コンパイラが正しく使えるかに注意
   - Windows にインストールする時はconda でコンパイラをインストール
+  - pip でインストールが良さそう
 - numpyro
-  - pip で環境を作るのが現状楽そう(20/6/7)
+  - pip から(20/6/7)
   - jax のバージョンに気をつける
 - xgboost
-  - conda でインストールする時はパッケージ名に気をつける
+  - conda でインストールする時はpy-xgboost
+- imbalanced-learn
+  - 不均衡データを扱うときに
+  - conda ではconda-forge から(20/6/7)
+- mlxtend
+  - conda ではconda-forge から(20/6/7)
+- shap
+  - conda ではconda-forge から(20/6/7)
 
 DL:
 
 ドキュメントを見ながら
 
 - tensorflow, tensorflow-datasets
-- pytorch, torchvision
+- pytorch, torchvision, ignite
+  - conda ではpytorch チャンネルから
 - pyro
-  - pip で環境を作る
+  - pip から(20/6/7)
 - flax
+  - pip から(20/6/7)
 
 RL:
 
 - open ai gym
-  - conda環境にインストールする場合はGitHub repository のsetup.py を確認してから
+  - conda 環境にインストールする場合はGitHub repository のsetup.py を確認してから
 - open ai baseline
   - GitHub repository からclone
 
