@@ -1,65 +1,75 @@
 # Python 環境管理メモ
 
-基本Anaconda のconda で管理。Anaconda 関連のパスは通さない。
+## packages
 
-Windows で普通のPython をインストールする時はパスを通さず、py launcherを活用する。
-
-## py.exe の使い方
-
-インタープリターの起動:
+リンター、フォーマッタ、テスト:
 
 ```
-py -3.7 // python 3.7 が起動
+autopep8 black flake8 mypy pyflakes pylint pytest
 ```
 
-pip の利用:
-
-```
-py -3.7 -m pip ... // python 3.7 のpip を使う時
-```
-
-## Pythonパッケージ
-
-よく使うもの:
-
-```
-autopep8 black flake8 mypy nose pyflakes pylint pytest sphinx
-```
-
-jupyter 周り:
+jupyter, jupyterlab:
 
 ```
 ipykernel jupyterlab notebook
 ```
 
-- カーネルだけでよければipykernel のみをインストールして、下記のカーネル追加を実行
-- nodejs も必要なら入れる(conda で入れられる)
+- jupyterlab のextension を使うにはnode.js が必要
+  - conda でインストール(PATH に気をつける) or
+  - (Mac) nodenv 経由でインストール etc.
 
-分析用環境:
+可視化:
 
 ```
-bokeh lightgbm matplotlib networkx nltk numpy pandas scikit-image scikit-learn scipy seaborn statsmodels sympy tensorflow tensorboard 
+matplotlib seaborn arviz bokeh plotly
 ```
-- xgboost (conda ではpy-xgboost)
+
+分析:
+
+```
+numpy scipy pandas scikit-learn scikit-image statsmodels lightgbm
+```
+
+以下はドキュメント等を参照しながら
+
+- pystan
+  - コンパイラが正しく使えるかに注意
+  - Windows にインストールする時はconda でコンパイラをインストール
+- numpyro
+  - pip で環境を作るのが現状楽そう(20/6/7)
+  - jax のバージョンに気をつける
+- xgboost
+  - conda でインストールする時はパッケージ名に気をつける
+
+DL:
+
+ドキュメントを見ながら
+
+- tensorflow, tensorflow-datasets
 - pytorch, torchvision
+- pyro
+  - pip で環境を作る
+- flax
 
+RL:
 
-## Jupyter
+- open ai gym
+  - conda環境にインストールする場合はGitHub repository のsetup.py を確認してから
+- open ai baseline
+  - GitHub repository からclone
 
-### 設定ファイル
+## jupyter
+
+### 設定ファイルの作成
 
 ```bash
-# 設定ファイルの作成
 jupyter notebook --generate-config
 ```
 
-### フォント変更
+### フォントなどの変更
 
-/custom/custom.css を.jupyter以下に配置でJupyter Notebook 
-のフォントを変更
-
-./jupyter/custom/custom.cssが普段使っているもの
-
+- /custom/custom.css を.jupyter以下に配置
+- 書き方は`./jupyter/custom/custom.css`を参照
 
 ### 仮想環境のカーネル追加
 
@@ -68,15 +78,18 @@ jupyter notebook --generate-config
 python -m ipykernel install --user --name <name of kernel> --display-name <name displayed on Jupyter>
 ```
 
-## pystan on Windows
+## py.exe の使い方
 
-- 依存パッケージのバージョンの組み合わせによって上手くいったりいかなかったり
-- 公式の説明に従ってインストール
-- numpy等はconda-forgeから
-- pystanはpipでインストールする
-- jupyter を使う時はこの環境から起動しないと上手くいかないことがある
+Windows で https://www.python.org/ からインストールする場合、py.exe でメジャーバージョンの使い分けができる
 
-## pymc3 on Windows
+- インタープリターの起動
 
-- 依存パッケージのバージョンの組み合わせによって上手くいったりいかなかったり
-- pymc3.ymlは上手くいった例
+```
+py -3.7 // python 3.7 が起動
+```
+
+- pip の利用
+
+```
+py -3.7 -m pip ... // python 3.7 のpip を使う
+```
