@@ -5,6 +5,37 @@
 - テーマはOne Dark Pro
 - アイコンはMaterial Icon Theme
 
+## extensions
+
+最低限:
+
+- Duplicate action
+- Git History
+- GitLens
+- Partial Diff
+- Path Autocomplete
+- Remote SSH
+- Todo Tree
+- Trailing Spaces
+
+Markdown:
+
+- Markdown+Math
+- markdownlint
+
+Python:
+
+- Python
+- Python Docstring Generator
+
+Java:
+
+- Java Extension Pack
+
+Scala:
+
+- Scala(Metals)
+
 ## integrated terminal
 
 - Mac では以下を設定に
